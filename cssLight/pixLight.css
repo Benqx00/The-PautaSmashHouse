@@ -7,8 +7,8 @@
 }
 
 body{
-    background:#000;
-    color:#fff;
+    background:#ffffff;
+    color:#000000;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -67,7 +67,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:#333;
+    background:#c3c3c3;
 }
 
 .active span,
@@ -83,7 +83,7 @@ body{
 }
 
 h1{
-    color:#FFEA00;
+    color:#000000;
     font-size:48px;
     font-family:'Italiana', serif;
 }
@@ -97,6 +97,7 @@ h1{
     background:#373737;
     border-radius:15px;
     padding:30px;
+    color: white;
 }
 
 .metodos{
@@ -141,6 +142,7 @@ h1{
 
 .codigo-area{
     flex:1;
+    color: #fff;
 }
 
 .codigo-area h3{
@@ -209,12 +211,4 @@ h1{
 
 #btnPagar:hover{
     opacity:.9;
-}
-
-.italianaFont {
-  font-family: "Italiana", sans-serif;
-}
-
-.stroke {
-  -webkit-text-stroke: 2px #000;
 }

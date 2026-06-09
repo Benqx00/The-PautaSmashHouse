@@ -10,11 +10,11 @@
 body {
   display: flex;
   min-height: 100vh;
-  background: #000;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
 }
 
-
+/* SIDEBAR */
 
 .sidebar {
   width: 320px;
@@ -62,21 +62,21 @@ body {
 }
 
 .colorYellow {
-  color: #ffd700 !important;
+  color: #000000 !important;
 }
 
 .fontMaior {
   font-size: 50px !important;
 }
 
-
+/* CONTEÚDO */
 
 .content {
   flex: 1;
   padding: 40px;
 }
 
-
+/* MENU SUPERIOR */
 
 .top-menu {
   display: flex;
@@ -89,7 +89,7 @@ body {
 
 .top-menu a {
   text-decoration: none;
-  color: #ffe600;
+  color: #000000;
   font-size: 24px;
 }
 
@@ -97,7 +97,7 @@ body {
   color: #fff;
 }
 
-
+/* PRODUTOS */
 
 .produtos {
   max-width: 1200px;
@@ -163,7 +163,7 @@ body {
   transform: scale(1.05);
 }
 
-
+/* RESPONSIVO */
 
 @media (max-width: 900px) {
   body {

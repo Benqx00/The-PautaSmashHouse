@@ -5,34 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pauta Smash House</title>
 
-    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="../cssLight/inicioLight.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
 <body>
-
+   
 <header>
     <nav class="navbar">
 
-        <img src="img/logo.png" alt="Logo" class="logo-header">
+        <img src="../img/logo.png" alt="Logo" class="logo-header">
 
         <div class="menu">
-            <a href="inicio.html">Ínicio</a>
+            <a href="inicioLight.html">Ínicio</a>
             <span>|</span>
 
             <a href="#sobre">Sobre nós</a>
             <span>|</span>
 
-            <a href="Cardapio.html">Cardápio</a>
+            <a href="CardapioLight.html">Cardápio</a>
             <span>|</span>
 
-            <a href="contato.html">Contato</a>
+            <a href="contatoLight.html">Contato</a>
+
+            <button id="temaBtn" onclick="trocarTema()">🌙</button>
+
+<script>
+function trocarTema() {
+    window.location.href = "../HtmlBlack/inicio.html";
+}
+</script>
+
+
         </div>
 
         <div class="perfil">
-    <a href="login.html">
+    <a href="loginLight.html">
         <i class="fa-solid fa-circle-user"></i>
     </a>
 </div>
@@ -59,7 +69,7 @@
             sabor em cada mordida.
         </p>
 
-        <button onclick="window.location.href='Cardapio.html'">
+        <button onclick="window.location.href='../HtmlLight/CardapioLight.html'">
     Ver Cardápio >
 </button>
 
@@ -69,7 +79,7 @@
 
 <section id="sobre" class="sobre">
 
-    <div class="texto">
+    <div class="sobreNos">
 
         <h2>•Sobre Nós•</h2>
 
@@ -105,7 +115,7 @@
             <span>CHEF BENQX</span>
         </div>
 
-        <img src="img/chefs.png" alt="Chefs">
+        <img src="../img/chefs.png" alt="Chefs">
 
     </div>
 
@@ -137,7 +147,7 @@
 
 </footer>
 
-<script src="script.js"></script>
+<script src="../js/tema.js"></script>
 
 </body>
 </html>

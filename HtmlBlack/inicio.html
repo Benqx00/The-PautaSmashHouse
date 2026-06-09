@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pauta Smash House</title>
+
+    <link rel="stylesheet" href="../css/inicio.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <button id="temaBtn" onclick="trocarTema()">☀️</button>
+
+<script>
+function trocarTema() {
+    window.location.href = "../HtmlLight/inicioLight.html";
+}
+</script>
+
+<header>
+    <nav class="navbar">
+
+        <img src="../img/logo.png" alt="Logo" class="logo-header">
+
+        <div class="menu">
+            <a href="inicio.html">Ínicio</a>
+            <span>|</span>
+
+            <a href="#sobre">Sobre nós</a>
+            <span>|</span>
+
+            <a href="Cardapio.html">Cardápio</a>
+            <span>|</span>
+
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="perfil">
+    <a href="login.html">
+        <i class="fa-solid fa-circle-user"></i>
+    </a>
+</div>
+
+    </nav>
+</header>
+
+<main id="inicio" class="hero">
+
+    <div class="texto">
+
+        <p class="slogan">
+            feito na chapa, feito para você.
+        </p>
+
+        <h1>
+            SMASH'S<br>
+            BURGERS.
+        </h1>
+
+        <p class="descricao">
+            Carnes esmagadas na chapa quente,
+            ingredientes selecionados, e muito
+            sabor em cada mordida.
+        </p>
+
+        <button onclick="window.location.href='Cardapio.html'">
+    Ver Cardápio >
+</button>
+
+    </div>
+
+</main>
+
+<section id="sobre" class="sobre">
+
+    <div class="texto">
+
+        <h2>•Sobre Nós•</h2>
+
+        <h1>
+            Mais que smashs,<br>
+            <span>uma experiência</span>
+        </h1>
+
+        <p>
+            Na Pauta Smash House, cada smash burger é preparado com paixão,
+            sabor e personalidade.
+            <br><br>
+
+            Nossa hamburgueria nasceu com a ideia de transformar simples
+            lanches em experiências marcantes, trazendo carnes prensadas
+            na chapa, ingredientes selecionados e um sabor artesanal
+            que conquista em cada mordida.
+            <br><br>
+
+            Sob o comando dos chefs Joãozin, Mucal e Benqx,
+            a Pauta Smash House entrega burgers suculentos,
+            combinações únicas e aquele clima perfeito para reunir
+            os amigos e viver uma verdadeira resenha.
+        </p>
+
+    </div>
+
+    <div class="chefs">
+
+        <div class="nomes">
+            <span>CHEF JOÃOZIN</span>
+            <span>CHEF MUCAL</span>
+            <span>CHEF BENQX</span>
+        </div>
+
+        <img src="../img/chefs.png" alt="Chefs">
+
+    </div>
+
+</section>
+
+<section id="cardapio">
+
+    <!-- Seus produtos/cardápio vão aqui -->
+
+</section>
+
+<footer id="contato">
+
+    <p>
+        © 2026 Todos os direitos reservados - Pauta Smash House
+    </p>
+
+    <div class="redes">
+
+        <a href="https://www.instagram.com/smashhousrburger_" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://wa.me/5514999999999" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+</footer>
+
+<script src="../js/tema.js"></script>
+
+</body>
+</html>

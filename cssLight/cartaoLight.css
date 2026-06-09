@@ -7,8 +7,8 @@
 }
 
 body{
-    background:#000;
-    color:#fff;
+    background:#ffffff;
+    color:#000000;
     font-family:Arial, Helvetica, sans-serif;
     min-height:100vh;
 }
@@ -50,6 +50,7 @@ body{
     transform:translateX(8px);
 }
 
+/* CONTEÚDO */
 
 .content{
     padding:40px 60px;
@@ -65,7 +66,7 @@ body{
     display:flex;
     align-items:center;
     gap:10px;
-    color:#fff;
+    color:#000000;
 }
 
 .step span{
@@ -75,7 +76,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:#333;
+    background:#000000;
 }
 
 .step.active span,
@@ -93,7 +94,7 @@ body{
 }
 
 h1{
-    color:#FFEA00;
+    color:#000000;
     font-family:'Italiana', serif;
     font-size:48px;
     margin-bottom:10px;
@@ -101,10 +102,10 @@ h1{
 
 .subtitulo{
     margin-bottom:30px;
-    color:#ddd;
+    color:#000000;
 }
 
-
+/* BOX PAGAMENTO */
 
 .pagamento-box{
     background:#2f2f2f;
@@ -181,21 +182,21 @@ select:focus{
     gap:15px;
 }
 
-
+/* SEGURANÇA */
 
 .seguranca{
     margin-top:25px;
     display:flex;
     align-items:center;
     gap:10px;
-    color:#ccc;
+    color:#000000;
 }
 
 .seguranca i{
     color:#FFEA00;
 }
 
-
+/* BOTÃO PAGAR */
 
 .rodape-pagamento{
     position:fixed;
@@ -231,6 +232,7 @@ select:focus{
     font-weight:bold;
 }
 
+/* RESPONSIVO */
 
 @media(max-width:900px){
 
@@ -268,12 +270,4 @@ select:focus{
     #btn-pagar{
         width:100%;
     }
-}
-
-.italianaFont {
-  font-family: "Italiana", sans-serif;
-}
-
-.stroke {
-  -webkit-text-stroke: 2px #000;
 }

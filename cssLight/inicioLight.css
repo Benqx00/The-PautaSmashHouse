@@ -14,8 +14,8 @@ body{
 
     background:
     linear-gradient(
-        rgba(0,0,0,0.4),
-        rgba(0,0,0,0.4)
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.4)
     ),
     url("../img/fundoinicio.png");
 
@@ -23,12 +23,12 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 header{
     width:100%;
-    background:black;
+    background:rgb(255, 255, 255);
 }
 
 .navbar{
@@ -44,7 +44,7 @@ header{
 
 nav a{
     text-decoration:none;
-    color:#FFD700;
+    color:#000000;
     font-size:36px;
     font-family:'Italiana', serif;
 }
@@ -56,7 +56,7 @@ nav a{
 }
 
 .menu span{
-    color:#FFD700;
+    color:#000000;
     font-size:36px;
 }
 
@@ -66,7 +66,7 @@ nav a{
 }
 
 .perfil i{
-    color:#FFD700;
+    color:#000000;
     font-size:52px;
     cursor:pointer;
 }
@@ -92,7 +92,7 @@ main{
 }
 
 .slogan{
-    color:white;
+    color:rgb(0, 0, 0);
     font-size:18px;
 
     text-decoration:underline;
@@ -150,7 +150,7 @@ button:hover{
 
 .sobre{
     min-height:100vh;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 
     display:flex;
     justify-content:space-between;
@@ -164,7 +164,7 @@ button:hover{
 }
 
 .texto h2{
-    color:#F2EA00;
+    color:#000000;
     font-size:40px;
     margin-bottom:20px;
 }
@@ -176,12 +176,19 @@ button:hover{
 }
 
 .texto h1 span{
-    color:#F2EA00;
+    color:#000000;
 }
 
 .texto p{
     font-size:22px;
     line-height:38px;
+    color: rgb(255, 255, 255);
+}
+
+.sobreNos p{
+    font-size:22px;
+    line-height:38px;
+    color: black;
 }
 
 .foto-chefs{
@@ -199,7 +206,7 @@ button:hover{
     top: 10px;
     left: 55px;
 
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
 }
 
@@ -209,7 +216,7 @@ button:hover{
     top: 10px;
     left: 200px;
 
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
 }
 
@@ -219,7 +226,7 @@ button:hover{
     top: 10px;
     left: 355px;
 
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
 }
 
@@ -233,6 +240,7 @@ button:hover{
     justify-content:space-around;
     margin-top:20px;
     text-align: center;
+    color: black;
    
 }
 
@@ -310,12 +318,6 @@ footer{
     color:#FFEA00;
     cursor:pointer;
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-
 #temaBtn{
     position: absolute;
     top: 20px;

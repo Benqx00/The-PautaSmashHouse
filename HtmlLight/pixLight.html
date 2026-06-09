@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento PIX</title>
+
+    <link rel="stylesheet" href="../cssLight/pixLight.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <a href="#">Smashes</a>
+            <a href="#">Bebidas</a>
+            <a href="#">Acompanhamentos</a>
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="steps">
+
+            <div class="step concluido">
+                <span>✓</span>
+                Seu Pedido
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step active">
+                <span>2</span>
+                Pagamento
+            </div>
+
+        </div>
+
+        <h1>Pagamento</h1>
+
+        <p class="subtitulo">
+            Escolha a forma de pagamento
+        </p>
+
+        <div class="pix-box">
+
+            <h2>Métodos de Pagamento</h2>
+
+            <div class="metodos">
+
+                <a href="cartaoLight.html" class="metodo">
+                    <i class="fa-regular fa-credit-card"></i>
+                    Débito
+                </a>
+
+               
+
+                <button class="metodo ativo">
+                    <i class="fa-brands fa-pix"></i>
+                    PIX
+                </button>
+
+            </div>
+
+            <div class="pix-area">
+
+                <div class="qr-box">
+                    <img src="../img/pix.png" class="qrcode">
+                </div>
+
+                <div class="codigo-area">
+
+                    <h3>Código PIX (Copia e Cola)</h3>
+
+                    <div id="codigoPix" class="codigo-pix">
+05068685685954993493992i32hijexhbh2323
+83823828328324756465645646737277277172
+5353525wgg2gw2wst2t2532535253525325332
+03******65789
+                    </div>
+
+                    <button id="copiarPix" class="btn-copiar">
+                        Copiar Código PIX
+                    </button>
+
+                    <p>
+                        O código expira em
+                        <span id="contador">09:58</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="seguranca">
+            <i class="fa-solid fa-lock"></i>
+            Seus dados estão protegidos com segurança
+        </div>
+
+    </main>
+
+</div>
+
+<div class="rodape-pagamento">
+
+    <button id="btnPagar">
+
+        <span>Pagar Agora</span>
+
+        <span id="valorPix">
+            R$ 57,00
+        </span>
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </button>
+
+</div>
+
+<script src="../js/pix.js"></script>
+
+</body>
+</html>
