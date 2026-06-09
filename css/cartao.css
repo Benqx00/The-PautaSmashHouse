@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    background:#FFEA00;
+    padding:30px;
+}
+
+.logo{
+    width:180px;
+    display:block;
+    margin:0 auto 40px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:#000;
+    font-size:32px;
+    font-family:'Italiana', serif;
+    transition:.3s;
+}
+
+.sidebar nav a:hover{
+    transform:translateX(8px);
+}
+
+/* CONTEÚDO */
+
+.content{
+    padding:40px 60px;
+}
+
+.steps{
+    display:flex;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.step{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#fff;
+}
+
+.step span{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#333;
+}
+
+.step.active span,
+.step.concluido span{
+    background:#FFEA00;
+    color:#000;
+    font-weight:bold;
+}
+
+.line{
+    width:150px;
+    height:3px;
+    background:#333;
+    margin:0 20px;
+}
+
+h1{
+    color:#FFEA00;
+    font-family:'Italiana', serif;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    margin-bottom:30px;
+    color:#ddd;
+}
+
+/* BOX PAGAMENTO */
+
+.pagamento-box{
+    background:#2f2f2f;
+    border-radius:15px;
+    padding:30px;
+}
+
+.pagamento-box h2{
+    margin-bottom:20px;
+    color:#fff;
+}
+
+.metodos{
+    display:flex;
+    gap:15px;
+    margin-bottom:35px;
+}
+
+.metodo{
+    padding:15px 20px;
+    border:1px solid #555;
+    background:transparent;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.metodo.ativo{
+    border:1px solid #FFEA00;
+    color:#FFEA00;
+}
+
+.metodo:hover{
+    border-color:#FFEA00;
+}
+
+.metodo i{
+    margin-right:8px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+label{
+    color:#fff;
+    font-size:15px;
+}
+
+input,
+select{
+    width:100%;
+    height:55px;
+    border:1px solid #FFEA00;
+    border-radius:6px;
+    background:#222;
+    color:#fff;
+    padding:0 15px;
+    font-size:16px;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#fff;
+}
+
+.linha-form{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:15px;
+}
+
+/* SEGURANÇA */
+
+.seguranca{
+    margin-top:25px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#ccc;
+}
+
+.seguranca i{
+    color:#FFEA00;
+}
+
+/* BOTÃO PAGAR */
+
+.rodape-pagamento{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+}
+
+#btn-pagar{
+    width:340px;
+    height:60px;
+    border:none;
+    border-radius:8px;
+    background:#FFEA00;
+    color:#000;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 20px;
+
+    transition:.3s;
+}
+
+#btn-pagar:hover{
+    transform:translateY(-2px);
+}
+
+#valor-pagamento{
+    font-weight:bold;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        display:none;
+    }
+
+    .content{
+        padding:20px;
+    }
+
+    .linha-form{
+        grid-template-columns:1fr;
+    }
+
+    .steps{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .line{
+        width:3px;
+        height:40px;
+    }
+
+    .rodape-pagamento{
+        position:static;
+        margin:20px;
+    }
+
+    #btn-pagar{
+        width:100%;
+    }
+}

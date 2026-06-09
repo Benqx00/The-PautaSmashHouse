@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pauta Smash House</title>
+
+    <link rel="stylesheet" href="css/cardapio.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <img src="../img/logo.png" class="logo" alt="Logo">
+
+        <nav class="menu-lateral ">
+            <a class="italianaFont stroke" href="Cardapio.html">smashes</a>
+            <a class="italianaFont stroke" href="cardapioBebidas.html">bebidas</a>
+            <a class="italianaFont stroke" href="cardapioAcompanhamentos.html">acompanhamentos</a>
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <nav class="top-menu">
+            <a class="italianaFont fontMaior" href="inicio.html">Início</a>
+            <span class="italianaFont fontMaior colorYellow">|</span>
+            <a class="italianaFont fontMaior" href="inicio.html">Sobre nós</a>
+            <span class="italianaFont fontMaior colorYellow">|</span>
+            <a class="italianaFont fontMaior" href="Cardapio.html">Cardápio</a>
+            <span class="italianaFont fontMaior colorYellow">|</span>
+            <a class="italianaFont fontMaior" href="contato.html">Contato</a>
+        </nav>
+
+        <section class="produtos">
+
+            <div class="card">
+
+                <h2 class="nome">
+                    Coca-Cola 350ml
+                </h2>
+
+                <div class="preco">R$ 7,00</div>
+
+                <img src="../img/coca.png" alt="Coca-Cola">
+
+                <button class="btn"
+onclick="selecionarBebida('Coca-Cola 350ml', 7)">
+    Selecionar
+</button>
+
+            </div>
+
+            <div class="card">
+
+                <h2 class="nome">
+                    Guaraná 350ml
+                </h2>
+
+                <div class="preco">R$ 7,00</div>
+
+                <img src="../img/guarana.png" alt="guarana">
+
+                <button class="btn"
+onclick="selecionarBebida('Guaraná 350ml', 7)">
+    Selecionar
+</button>
+
+            </div>
+
+            <div class="card">
+
+                <h2 class="nome">
+                    Água Mineral
+                </h2>
+
+                <div class="preco">R$ 4,00</div>
+
+                <img src="../img/agua.png" alt="Água">
+
+                <button class="btn"
+onclick="selecionarBebida('Água Mineral', 4)">
+    Selecionar
+</button>
+
+            </div>
+
+            <div class="card">
+
+                <h2 class="nome">
+                    suco del valle maracujá 250ml
+                </h2>
+
+                <div class="preco">R$ 6,50</div>
+
+                <img src="../img/suco.png" alt="Smash Simple">
+
+                <button class="btn"
+onclick="selecionarBebida('Suco Del Valle', 6.50)">
+    Selecionar
+</button>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script>
+function selecionarBebida(nome, preco){
+
+    localStorage.setItem("bebidaNome", nome);
+    localStorage.setItem("bebidaPreco", preco);
+
+    window.location.href = "cardapioAcompanhamentos.html";
+}
+</script>
+
+    <script src="../js/cardapio.js"></script>
+
+</body>
+
+</html>

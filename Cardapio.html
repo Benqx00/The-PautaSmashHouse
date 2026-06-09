@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pauta Smash House</title>
+
+    <link rel="stylesheet" href="../css/cardapio.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <img src="../img/logo.png" class="logo" alt="Logo">
+
+        <nav class="menu-lateral ">
+            <a class="italianaFont stroke" href="Cardapio.html">smashes</a>
+            <a class="italianaFont stroke" href="cardapioBebidas.html">bebidas</a>
+            <a class="italianaFont stroke" href="cardapioAcompanhamentos.html">acompanhamentos</a>
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <nav class="top-menu">
+            <a class="italianaFont fontMaior" href="inicio.html">Início</a>
+            <span class="italianaFont fontMaior colorYellow">|</span>
+            <a class="italianaFont fontMaior" href="inicio.html">Sobre nós</a>
+            <span class="italianaFont fontMaior colorYellow">|</span>
+            <a class="italianaFont fontMaior" href="Cardapio.html">Cardápio</a>
+            <span class="italianaFont fontMaior colorYellow">|</span>
+            <a class="italianaFont fontMaior" href="contato.html">Contato</a>
+        </nav>
+
+        <section class="produtos">
+
+    <div class="card">
+
+        <h2 class="nome">
+            SMASH <span>HOUSE</span>
+        </h2>
+
+        <div class="preco">R$ 40,00</div>
+
+        <img src="../img/smashhouse.png" alt="Smash House">
+
+        <ul class="ingredientes">
+            <li>Pão Brioche</li>
+            <li>3 Carnes</li>
+            <li>Bacon</li>
+            <li>Cheddar</li>
+        </ul>
+
+        <button class="btn"
+            onclick="selecionarLanche('Smash House', 40.00)">
+            Selecionar
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2 class="nome">
+            SMASH <span>BACON</span>
+        </h2>
+
+        <div class="preco">R$ 34,99</div>
+
+        <img src="../img/smashbacon.png" alt="Smash Bacon">
+
+        <ul class="ingredientes">
+            <li>Pão Brioche</li>
+            <li>Cebola Roxa</li>
+            <li>Bacon</li>
+            <li>Cheddar</li>
+            <li>1 Carne</li>
+        </ul>
+
+        <button class="btn"
+            onclick="selecionarLanche('Smash Bacon', 34.99)">
+            Selecionar
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2 class="nome">
+            SMASH <span>HUNGRY</span>
+        </h2>
+
+        <div class="preco">R$ 45,99</div>
+
+        <img src="../img/smashhungry.png" alt="Smash Hungry">
+
+        <ul class="ingredientes">
+            <li>Pão Brioche</li>
+            <li>3 Carnes</li>
+            <li>Cheddar</li>
+        </ul>
+
+        <button class="btn"
+            onclick="selecionarLanche('Smash Hungry', 45.99)">
+            Selecionar
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2 class="nome">
+            SMASH <span>SIMPLE</span>
+        </h2>
+
+        <div class="preco">R$ 29,99</div>
+
+        <img src="../img/smashS1mple.png" alt="Smash Simple">
+
+        <ul class="ingredientes">
+            <li>1 Carne</li>
+            <li>Cheddar</li>
+            <li>Pão Brioche</li>
+            <li>Queijo Coalho</li>
+        </ul>
+
+        <button class="btn"
+            onclick="selecionarLanche('Smash Simple', 29.99)">
+            Selecionar
+        </button>
+
+    </div>
+
+</section>
+
+    </main>
+    <script>
+function selecionarLanche(nome, preco){
+
+    localStorage.setItem("lancheNome", nome);
+    localStorage.setItem("lanchePreco", preco);
+
+    window.location.href = "cardapioBebidas.html";
+}
+</script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

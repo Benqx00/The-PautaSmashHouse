@@ -1,0 +1,316 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+   margin: 0px;
+    min-height: 100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url("../img/fundoinicio.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color:white;
+}
+
+header{
+    width:100%;
+    background:black;
+}
+
+.navbar{
+    width:100%;
+    height:144px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 50px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#FFD700;
+    font-size:36px;
+    font-family:'Italiana', serif;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.menu span{
+    color:#FFD700;
+    font-size:36px;
+}
+
+.perfil{
+    display:flex;
+    align-items:center;
+}
+
+.perfil i{
+    color:#FFD700;
+    font-size:52px;
+    cursor:pointer;
+}
+
+.logo-header{
+    width:120px;
+    height:auto;
+}
+
+main{
+    width:100%;
+    min-height:80vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 60px;
+}
+
+.texto{
+    width:40%;
+}
+
+.slogan{
+    color:white;
+    font-size:18px;
+
+    text-decoration:underline;
+    margin-bottom:20px;
+}
+
+h1{
+    color:#FFD700;
+    font-size:95px;
+    font-family:'Cormorant Garamond', serif;
+    font-weight:400;
+    line-height:100px;
+}
+
+.descricao{
+    margin-top:30px;
+    font-size:22px;
+    line-height:35px;
+}
+
+button{
+    margin-top:40px;
+
+    background:#FFD700;
+    color:black;
+
+    border:none;
+
+    padding:18px 35px;
+
+    font-size:24px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.imagem img{
+    background-image: url(../img/fundoinicio.png);
+    width:850px;
+}
+
+
+
+
+
+
+
+
+
+.sobre{
+    min-height:100vh;
+    background-color: black;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:60px;
+}
+
+.texto{
+    width:45%;
+}
+
+.texto h2{
+    color:#F2EA00;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.texto h1{
+    font-size:64px;
+    font-weight:normal;
+    margin-bottom:30px;
+}
+
+.texto h1 span{
+    color:#F2EA00;
+}
+
+.texto p{
+    font-size:22px;
+    line-height:38px;
+}
+
+.foto-chefs{
+    position: relative;
+    width: fit-content;
+}
+
+.foto-chefs img{
+    width: 450px;
+}
+
+/* Joãozin */
+.joaozin{
+    position: absolute;
+    top: 10px;
+    left: 55px;
+
+    color: white;
+    font-size: 20px;
+}
+
+/* Mucal */
+.mucal{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+
+    color: white;
+    font-size: 20px;
+}
+
+/* Benqx */
+.benqx{
+    position: absolute;
+    top: 10px;
+    left: 355px;
+
+    color: white;
+    font-size: 20px;
+}
+
+.chefs img{
+    width:100%;
+    max-width:800px;
+}
+
+.nomes{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+    text-align: center;
+   
+}
+
+.nomes span{
+    font-size:20px;
+}
+
+footer{
+    background:#262525;
+    text-align:center;
+    padding:40px;
+    font-size:22px;
+}
+
+.hero{
+    width:100%;
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../img/fundoinicio.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 60px;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:20px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav a,
+    .menu span{
+        font-size:20px;
+    }
+
+    .perfil i{
+        font-size:40px;
+    }
+
+    .login-box{
+        width:95%;
+    }
+}
+
+.redes{
+    margin-top:15px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.redes i{
+    font-size:32px;
+    color:#FFEA00;
+    cursor:pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
