@@ -12,5 +12,5 @@ login.addEventListener("submit", function(event) {
         return;
     }
 
-    window.location.href = "inicio.html";
+    window.location.href = "/index.html";
 });
