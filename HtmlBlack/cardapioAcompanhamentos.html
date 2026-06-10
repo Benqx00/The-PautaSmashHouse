@@ -49,10 +49,9 @@
 
                 <img src="../img/oneonrings.png" alt="onionRings">
 
-                <button class="btn"
-onclick="selecionarAcompanhamento('Onion Rings', 15)">
-    Selecionar
-</button>
+                <button class="btn" onclick="selecionarAcompanhamento('Onion Rings', 15)">
+                    Selecionar
+                </button>
 
             </div>
 
@@ -66,10 +65,9 @@ onclick="selecionarAcompanhamento('Onion Rings', 15)">
 
                 <img src="../img/comcheedar.png" alt="BatataCheddar">
 
-                <button class="btn"
-onclick="selecionarAcompanhamento('Batata com Cheddar', 25)">
-    Selecionar
-</button>
+                <button class="btn" onclick="selecionarAcompanhamento('Batata com Cheddar', 25)">
+                    Selecionar
+                </button>
 
             </div>
 
@@ -83,10 +81,9 @@ onclick="selecionarAcompanhamento('Batata com Cheddar', 25)">
 
                 <img src="../img/batata.png" alt="BatataMedia">
 
-                <button class="btn"
-onclick="selecionarAcompanhamento('Batata Média', 10)">
-    Selecionar
-</button>
+                <button class="btn" onclick="selecionarAcompanhamento('Batata Média', 10)">
+                    Selecionar
+                </button>
 
 
             </div>
@@ -95,21 +92,21 @@ onclick="selecionarAcompanhamento('Batata Média', 10)">
 
     </main>
     <script>
-function selecionarAcompanhamento(nome, preco){
+        function selecionarAcompanhamento(nome, preco) {
 
-    localStorage.setItem("acompanhamentoNome", nome);
-    localStorage.setItem("acompanhamentoPreco", preco);
+            localStorage.setItem("acompanhamentoNome", nome);
+            localStorage.setItem("acompanhamentoPreco", preco);
 
-    const lanche = Number(localStorage.getItem("lanchePreco")) || 0;
-    const bebida = Number(localStorage.getItem("bebidaPreco")) || 0;
+            const lanche = Number(localStorage.getItem("lanchePreco")) || 0;
+            const bebida = Number(localStorage.getItem("bebidaPreco")) || 0;
 
-    const total = lanche + bebida + preco;
+            const total = lanche + bebida + preco;
 
-    localStorage.setItem("totalPedido", total);
+            localStorage.setItem("totalPedido", total);
 
-    window.location.href = "cartao.html";
-}
-</script>
+            window.location.href = "cartao.html";
+        }
+    </script>
 
     <script src="../js/cardapio.js"></script>
 

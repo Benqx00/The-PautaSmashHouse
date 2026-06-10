@@ -49,10 +49,9 @@
 
                 <img src="../img/cocaLight.png" alt="Coca-Cola">
 
-                <button class="btn"
-onclick="selecionarBebida('Coca-Cola 350ml', 7)">
-    Selecionar
-</button>
+                <button class="btn" onclick="selecionarBebida('Coca-Cola 350ml', 7)">
+                    Selecionar
+                </button>
 
             </div>
 
@@ -66,10 +65,9 @@ onclick="selecionarBebida('Coca-Cola 350ml', 7)">
 
                 <img src="../img/guarana.png" alt="guarana">
 
-                <button class="btn"
-onclick="selecionarBebida('Guaraná 350ml', 7)">
-    Selecionar
-</button>
+                <button class="btn" onclick="selecionarBebida('Guaraná 350ml', 7)">
+                    Selecionar
+                </button>
 
             </div>
 
@@ -83,10 +81,9 @@ onclick="selecionarBebida('Guaraná 350ml', 7)">
 
                 <img src="../img/aguaLight.png" alt="Água">
 
-                <button class="btn"
-onclick="selecionarBebida('Água Mineral', 4)">
-    Selecionar
-</button>
+                <button class="btn" onclick="selecionarBebida('Água Mineral', 4)">
+                    Selecionar
+                </button>
 
             </div>
 
@@ -100,10 +97,9 @@ onclick="selecionarBebida('Água Mineral', 4)">
 
                 <img src="../img/sucoLight.png" alt="Smash Simple">
 
-                <button class="btn"
-onclick="selecionarBebida('Suco Del Valle', 6.50)">
-    Selecionar
-</button>
+                <button class="btn" onclick="selecionarBebida('Suco Del Valle', 6.50)">
+                    Selecionar
+                </button>
 
             </div>
 
@@ -111,14 +107,14 @@ onclick="selecionarBebida('Suco Del Valle', 6.50)">
 
     </main>
     <script>
-function selecionarBebida(nome, preco){
+        function selecionarBebida(nome, preco) {
 
-    localStorage.setItem("bebidaNome", nome);
-    localStorage.setItem("bebidaPreco", preco);
+            localStorage.setItem("bebidaNome", nome);
+            localStorage.setItem("bebidaPreco", preco);
 
-    window.location.href = "cardapioAcompanhamentosLight.html";
-}
-</script>
+            window.location.href = "cardapioAcompanhamentosLight.html";
+        }
+    </script>
 
     <script src="../js/cardapio.js"></script>
 

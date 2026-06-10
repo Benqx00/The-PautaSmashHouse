@@ -14,8 +14,6 @@ body {
   color: #fff;
 }
 
-
-
 .sidebar {
   width: 320px;
   min-width: 320px;
@@ -69,14 +67,10 @@ body {
   font-size: 50px !important;
 }
 
-
-
 .content {
   flex: 1;
   padding: 40px;
 }
-
-
 
 .top-menu {
   display: flex;
@@ -96,8 +90,6 @@ body {
 .top-menu span {
   color: #fff;
 }
-
-
 
 .produtos {
   max-width: 1200px;
@@ -162,8 +154,6 @@ body {
 .btn:hover {
   transform: scale(1.05);
 }
-
-
 
 @media (max-width: 900px) {
   body {

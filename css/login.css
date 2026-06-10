@@ -1,202 +1,197 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    margin: 0;
-    min-height: 100vh;
+body {
+  margin: 0;
+  min-height: 100vh;
 
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.4),
-        rgba(0,0,0,0.4)
-    ),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../img/telalogin.png");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    color:white;
+  color: white;
 }
 
-
-header{
-    width:100%;
-    background:black;
+header {
+  width: 100%;
+  background: black;
 }
 
-.navbar{
-    width:100%;
-    height:144px;
+.navbar {
+  width: 100%;
+  height: 144px;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    padding:0 50px;
+  padding: 0 50px;
 }
 
-nav a{
-    text-decoration:none;
-    color:#FFD700;
-    font-size:36px;
-    font-family:'Italiana', serif;
+nav a {
+  text-decoration: none;
+  color: #ffd700;
+  font-size: 36px;
+  font-family: "Italiana", serif;
 }
 
-.menu{
-    display:flex;
-    align-items:center;
-    gap:20px;
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.menu span{
-    color:#FFD700;
-    font-size:36px;
+.menu span {
+  color: #ffd700;
+  font-size: 36px;
 }
 
-.perfil{
-    display:flex;
-    align-items:center;
+.perfil {
+  display: flex;
+  align-items: center;
 }
 
-.perfil i{
-    color:#FFD700;
-    font-size:52px;
-    cursor:pointer;
+.perfil i {
+  color: #ffd700;
+  font-size: 52px;
+  cursor: pointer;
 }
 
-.logo-header{
-    width:120px;
-    height:auto;
+.logo-header {
+  width: 120px;
+  height: auto;
 }
 
 /* LOGIN */
 
-.container{
-    display: flex;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 144px);
+}
+
+.login-box {
+  width: 500px;
+  min-height: 650px;
+
+  border: 2px solid #ffd700;
+  border-radius: 25px;
+
+  padding: 40px;
+
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.logo {
+  width: 120px;
+  display: block;
+  margin: auto;
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-box span {
+  color: #ffd700;
+}
+
+.login-box p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 25px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #ffd700;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  font-size: 16px;
+
+  background: transparent;
+  border: 1px solid #ffd700;
+  color: white;
+}
+
+button {
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  font-weight: bold;
+
+  background: #ffd700;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.cadastro {
+  margin-top: 20px;
+}
+
+.cadastro a {
+  color: #ffd700;
+}
+
+.localizacao {
+  margin-left: 30px;
+  margin-top: 20px;
+  color: white;
+}
+
+.localizacao i {
+  color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 144px);
-}
+  }
 
-.login-box{
-    width: 500px;
-    min-height: 650px;
+  nav a,
+  .menu span {
+    font-size: 20px;
+  }
 
-    border: 2px solid #FFD700;
-    border-radius: 25px;
+  .perfil i {
+    font-size: 40px;
+  }
 
-    padding: 40px;
-
-    background: rgba(0,0,0,.60);
-    backdrop-filter: blur(5px);
-}
-
-.logo{
-    width:120px;
-    display:block;
-    margin:auto;
-}
-
-.login-box h1{
-    text-align:center;
-    margin-top:15px;
-}
-
-.login-box span{
-    color:#FFD700;
-}
-
-.login-box p{
-    text-align:center;
-    margin-top:10px;
-}
-
-form{
-    margin-top:25px;
-}
-
-label{
-    display:block;
-    margin-top:15px;
-    margin-bottom:5px;
-    color:#FFD700;
-}
-
-input{
-    width: 100%;
-    height: 50px;
-    padding: 15px;
-    font-size: 16px;
-
-    background: transparent;
-    border: 1px solid #FFD700;
-    color: white;
-}
-
-button{
-    width: 100%;
-    height: 55px;
-    font-size: 18px;
-    font-weight: bold;
-
-    background: #FFD700;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover{
-    opacity:.9;
-}
-
-.cadastro{
-    margin-top:20px;
-}
-
-.cadastro a{
-    color:#FFD700;
-}
-
-.localizacao{
-    margin-left:30px;
-    margin-top:20px;
-    color:white;
-}
-
-.localizacao i{
-    color:#FFD700;
-}
-
-@media(max-width:768px){
-
-    .navbar{
-        flex-direction:column;
-        height:auto;
-        padding:20px;
-        gap:20px;
-    }
-
-    .menu{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    nav a,
-    .menu span{
-        font-size:20px;
-    }
-
-    .perfil i{
-        font-size:40px;
-    }
-
-    .login-box{
-        width:95%;
-    }
+  .login-box {
+    width: 95%;
+  }
 }
