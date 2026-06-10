@@ -201,7 +201,7 @@ button:hover{
     width: 450px;
 }
 
-/* Joãozin */
+
 .joaozin{
     position: absolute;
     top: 10px;
@@ -211,7 +211,7 @@ button:hover{
     font-size: 20px;
 }
 
-/* Mucal */
+
 .mucal{
     position: absolute;
     top: 10px;
@@ -221,7 +221,7 @@ button:hover{
     font-size: 20px;
 }
 
-/* Benqx */
+
 .benqx{
     position: absolute;
     top: 10px;
@@ -392,15 +392,13 @@ html {
 .tema-btn:hover{
     transform: scale(1.0);
 }
-/* MOBILE */
-@media (max-width: 768px){
 
-    /* Navbar */
+@media (max-width: 768px){
    .navbar{
     position: relative;
 }
 
-/* Perfil no canto esquerdo */
+
 .perfil a{
     position: absolute;
     left: 15px;
@@ -411,7 +409,7 @@ html {
     font-size: 24px;
 }
 
-/* Botão tema no canto direito */
+
 .tema-btn{
     position: absolute;
     right: -130px;
@@ -425,7 +423,7 @@ html {
     font-size: 24px;
 }
 
-    /* Hero */
+  
     .hero{
     background-size: cover;
     background-position: 70% center;
@@ -457,7 +455,7 @@ html {
         margin-top: 20px;
     }
 
-    /* Sobre nós */
+  
     .sobre{
         flex-direction: column;
         padding: 40px 20px;
@@ -502,7 +500,7 @@ html {
         font-size: 18px;
     }
 
-    /* Footer */
+   
     footer{
         padding: 25px 15px;
         font-size: 16px;

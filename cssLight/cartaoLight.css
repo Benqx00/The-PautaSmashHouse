@@ -19,7 +19,7 @@ body{
     min-height:100vh;
 }
 
-/* SIDEBAR */
+
 
 .sidebar{
     background:#FFEA00;
@@ -50,7 +50,7 @@ body{
     transform:translateX(8px);
 }
 
-/* CONTEÚDO */
+
 
 .content{
     padding:40px 60px;
@@ -181,9 +181,6 @@ select:focus{
     grid-template-columns:2fr 1fr 1fr;
     gap:15px;
 }
-
-/* SEGURANÇA */
-
 .seguranca{
     margin-top:25px;
     display:flex;
@@ -196,7 +193,7 @@ select:focus{
     color:#FFEA00;
 }
 
-/* BOTÃO PAGAR */
+
 
 .rodape-pagamento{
     position:fixed;
@@ -232,7 +229,7 @@ select:focus{
     font-weight:bold;
 }
 
-/* RESPONSIVO */
+
 
 @media(max-width:900px){
 

@@ -14,7 +14,7 @@ body {
   color: #000000;
 }
 
-/* SIDEBAR */
+
 
 .sidebar {
   width: 320px;
@@ -69,14 +69,10 @@ body {
   font-size: 50px !important;
 }
 
-/* CONTEÚDO */
-
 .content {
   flex: 1;
   padding: 40px;
 }
-
-/* MENU SUPERIOR */
 
 .top-menu {
   display: flex;
@@ -96,8 +92,6 @@ body {
 .top-menu span {
   color: #fff;
 }
-
-/* PRODUTOS */
 
 .produtos {
   max-width: 1200px;
@@ -163,7 +157,7 @@ body {
   transform: scale(1.05);
 }
 
-/* RESPONSIVO */
+
 
 @media (max-width: 900px) {
   body {

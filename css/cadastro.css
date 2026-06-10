@@ -21,8 +21,6 @@ body {
   color: white;
 }
 
-/* HEADER */
-
 header {
   width: 100%;
   background: black;
@@ -78,7 +76,7 @@ header {
   cursor: pointer;
 }
 
-/* CONTEÚDO */
+
 
 .container {
   display: flex;
