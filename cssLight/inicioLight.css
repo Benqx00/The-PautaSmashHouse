@@ -95,40 +95,35 @@ main{
 .slogan{
     color:rgb(0, 0, 0);
     font-size:18px;
-
     text-decoration:underline;
     margin-bottom:20px;
 }
 
 h1{
-    color:#FFD700;
-    font-size:95px;
-    font-family:'Cormorant Garamond', serif;
-    font-weight:400;
-    line-height:100px;
+    
+  color: #ffd700;
+  font-size: clamp(50px, 8vw, 95px);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
+
 .descricao{
-    margin-top:30px;
+    margin-top: 30px;
     font-size:22px;
     line-height:35px;
 }
 
 button{
-    margin-top:40px;
-
+   
     background:#FFD700;
     color:black;
-
     border:none;
-
     padding:18px 35px;
-
     font-size:24px;
     font-weight:bold;
-
     cursor:pointer;
-
     transition:0.3s;
 }
 
@@ -140,14 +135,6 @@ button:hover{
     background-image: url(../img/fundoinicio.png);
     width:850px;
 }
-
-
-
-
-
-
-
-
 
 .sobre{
     min-height:100vh;
